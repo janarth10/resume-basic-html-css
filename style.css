@@ -1,0 +1,22 @@
+body{
+    font-size: 2em;
+}
+
+.leftColumn{
+    background-color: coral;
+    height: 100vh;
+    margin: 10px;
+}
+
+.rightColumn{
+    background-color: lightgreen;
+}
+
+.topbar{
+    background-color: lightblue;
+}
+
+.experience{
+    background-color: rgb(223, 173, 230);
+}
+
