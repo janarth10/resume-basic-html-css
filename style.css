@@ -1,15 +1,23 @@
-body{
+.wrapper{
+    display: flex;
+    box-sizing: border-box;
+    outline: 3px dashed darkcyan;
     font-size: 2em;
 }
 
-.leftColumn{
-    background-color: coral;
+.col {
     height: 100vh;
-    margin: 10px;
+    padding: 50px 25px;
 }
 
-.rightColumn{
+.leftCol{
+    background-color: coral;
+    width: 70%;
+}
+
+.rightCol{
     background-color: lightgreen;
+    width: 30%;
 }
 
 .topbar{
