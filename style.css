@@ -1,11 +1,39 @@
-body{
-    font-size: 2em;
+.main{
+    /* 
+        going to add a container on the page to limit
+        size, just so its easier to work with the grid for
+        now
+    */
+    width: 2400px;
+    height: 2400px;
+
+    font-size: 25px;
+    display: grid;
+
+    /* using percentages is harder because we have to do the math ourselves */
+    /* grid-template-columns: 75% 25%; */
+
+    /* fr units recalculate ratios for us! */
+    grid-template-columns: 1fr 500px; /* wonder why the sizes of the columns are different from percentages? */
+
+    /* think percentages use viewport rather than entire pages */
+    /* grid-template-rows: 50% 50%; */
+
+    /* with fr units it looks like the size of grid cell grows with content */
+    grid-template-rows: 300px 1fr;
+
+    /* Need this to stop layout from growing to size of its contents */
+    min-height: 0px;
+    min-width: 0px;
 }
+
+.spacing-under-profile-pic {
+    height: 150px;
+}
+
 
 .leftColumn{
     background-color: coral;
-    height: 100vh;
-    margin: 10px;
 }
 
 .rightColumn{
@@ -17,6 +45,18 @@ body{
 }
 
 .experience{
-    background-color: rgb(223, 173, 230);
+    /* background-color: rgb(223, 173, 230); */
+}
+
+.headshot {
+    border-radius: 50%;
+    /* width: 500px; */
+    height: 500px;
+
+    /* got this using https://bennettfeely.com/clippy/ */
+    clip-path: circle(50% at 68% 38%);
+
+    position: relative;
+    right: 90px;
 }
 
